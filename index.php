@@ -1,0 +1,49 @@
+
+<!DOCTYPE html> 
+<html> 
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Daily Merchandiser Report</title> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.css" />
+	<script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.js"></script>
+<!--script src="/mint/?js" type="text/javascript"></script-->
+</head> 
+
+<body> 
+<div data-role="page" id="home"  style="background:white;">
+	<div data-position="fixed" data-role="header" data-theme="b">
+		<!--a data-icon="home" data-iconpos="notext" href="http://www.blogger.com/post-create.g?blogID=892712659100500876#home">Home</a--> 
+		<h1>Daily Merchandiser Report</h1>
+	</div>
+
+	<div align="center" data-role="content" id="contentConfirmation" name="contentConfirmation"  style="background:white;">
+		<div><img src="images.jpg"></div>
+		<h2></h2>
+		<form id="HLogin" method="POST" action="main.php">
+			<div data-role="fieldcontain">
+				<label for="url">Username:*</label>  
+          		<input class="required" id="Lusername" name="uid_r" type="text" value="">            
+        	</div>
+        	<div data-role="fieldcontain">
+        		<label for="url">Password:*</label>  
+          		<input id="Lpassword" name="pwd_r" type="password" value="">            
+        	</div>
+        	<div class="ui-grid-a"  style="background:white;">
+        		<div class="ui-body ui-body-b"  style="background:white;">
+        			<div class="ui-block-a">
+        				<button data-icon="delete" data-theme="c" type="submit">cancel</button>  
+        			</div>
+        			<div class="ui-block-b">
+        				<button data-theme="b" type="submit">Login</button>  
+        			</div>
+        		</div>
+        	</div>
+        </form>
+    </div>
+</div>  
+
+</body>
+</html>
